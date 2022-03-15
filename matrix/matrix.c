@@ -53,10 +53,10 @@ Matrix* addVector(Matrix *matrix, int *vector, int len)
     return resultMatrix;
 }
 
-void printMatrix(Matrix *matrix) {
+void printMatrix(Matrix *matrix, FILE *stream) {
     for (int i = 0; i < matrix->height; i++) {
         for (int j = 0; j < matrix->width; j++)
-            printf("%d ", matrix->values[i][j]);
+            fprintf(stream, "%d ", matrix->values[i][j]);
 
         printf("\n");
     }

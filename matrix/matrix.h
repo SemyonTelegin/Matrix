@@ -18,6 +18,6 @@ typedef struct Matrix
 Matrix* newMatrix(size_t height, size_t width);
 void deleteMatrix(Matrix *matrix);
 Matrix* addVector(Matrix *matrix, int *vector, int len);
-void printMatrix(Matrix *matrix);
+void printMatrix(Matrix *matrix, FILE *stream);
 
 #endif //MATRIX_MATRIX_H
